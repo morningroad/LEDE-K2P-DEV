@@ -31,7 +31,7 @@ env:
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
-  TZ: Asia/HongKong
+  TZ: Asia/Hong_Kong
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
