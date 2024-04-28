@@ -74,6 +74,7 @@ jobs:
         cd Python-3.5.0
         ./configure
         make
+        sudo make install
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
         echo "status=success" >> ${GITHUB_OUTPUT}
