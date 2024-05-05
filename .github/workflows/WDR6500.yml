@@ -123,7 +123,8 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
         sudo mkdir -p /workdir/openwrt/dl
         cd /workdir/openwrt/dl
-        wget https://github.com/kvalo/ath10k-firmware/blob/master/QCA99X0/hw2.0/board-2.bin board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
+        wget https://github.com/kvalo/ath10k-firmware/blob/master/QCA99X0/hw2.0/board-2.bin
+        mv board-2.bin board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
         
         
     - name: Compile the firmware
