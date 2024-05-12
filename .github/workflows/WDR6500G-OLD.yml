@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: WDR6500G
+name: WDR6500G-OLD
 
 on:
   repository_dispatch:
@@ -67,6 +67,13 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
+        sudo apt-get install libssl-dev openssl
+        wget https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tgz
+        tar xzvf Python-3.5.0.tgz
+        cd Python-3.5.0
+        ./configure
+        make
+        sudo make install
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
         echo "status=success" >> ${GITHUB_OUTPUT}
