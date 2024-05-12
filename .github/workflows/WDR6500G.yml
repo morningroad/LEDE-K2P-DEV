@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/morningroad/openwrt
+  REPO_URL: https://github.com/morningroad/lede
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: LEDE-WDR6500G.config
   DIY_P1_SH: false
