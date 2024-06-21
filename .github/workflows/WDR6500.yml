@@ -121,9 +121,9 @@ jobs:
         make download -j18
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-#        sudo mkdir -p /workdir/openwrt/dl
-#        cd /workdir/openwrt/dl
-#        wget https://github.com/kvalo/ath10k-firmware/blob/master/QCA99X0/hw2.0/board-2.bin
+        sudo mkdir -p /workdir/openwrt/dl
+        cd /workdir/openwrt/dl
+        wget https://github.com/Freifunk-Nord/gluon-build-dependencies/blob/master/openwrt/dl/board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
 #        mv board-2.bin board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
         
     - name: Compile the firmware
