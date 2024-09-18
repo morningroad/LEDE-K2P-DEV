@@ -23,14 +23,14 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: LEDE-K2p.config
+  CONFIG_FILE: K2P-open.config
   DIY_P1_SH: 
   DIY_P2_SH: 
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Hong_Kong
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
