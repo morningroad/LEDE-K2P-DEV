@@ -70,7 +70,7 @@ jobs:
         remove-haskell: 'true'
         remove-codeql: 'true'
         remove-docker-images: 'true'
-    
+
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
