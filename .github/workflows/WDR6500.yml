@@ -149,7 +149,7 @@ jobs:
         cd /workdir/openwrt/dl
         wget https://github.com/Freifunk-Nord/gluon-build-dependencies/blob/master/openwrt/dl/board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
         wget https://deb.sipwise.com/debian/pool/main/m/mklibs/mklibs_0.1.45.tar.xz
-        mv board-2.bin board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
+#        mv board-2.bin board-2.bin.ddcec9efd245da9365c474f513a855a55f3ac7fe
         
         
     - name: Compile the firmware
