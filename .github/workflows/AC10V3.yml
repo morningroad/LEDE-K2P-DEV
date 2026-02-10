@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: WDR6500
+name: AC10V3
 
 on:
   repository_dispatch:
@@ -20,10 +20,10 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
+  REPO_URL: https://github.com/vladisslav2011/openwrt-AC10
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: WDR6500.config
+  CONFIG_FILE: AC10V3.config
   DIY_P1_SH: false
   DIY_P2_SH: false
   UPLOAD_BIN_DIR: true
