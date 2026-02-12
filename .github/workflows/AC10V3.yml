@@ -36,7 +36,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: github.event.repository.owner.id == github.event.sender.id || ! github.event.sender.id
 
     steps:
@@ -102,11 +102,7 @@ jobs:
         sudo chown $USER:$GROUPS /workdir
         echo "status=success" >> ${GITHUB_OUTPUT}
         df -Th
-        sudo apt install gcc-4.8 g++-4.8
-        sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 60
-        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 60
-        sudo update-alternatives --config gcc
-        sudo update-alternatives --config g++
+        
 
     - name: Clone source code
       working-directory: /workdir
