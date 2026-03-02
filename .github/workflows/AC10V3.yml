@@ -106,7 +106,7 @@ jobs:
     - name: Set up GCC
       uses: egor-tensin/setup-gcc@v2
       with:
-       version: 5
+       version: 9
        platform: x64
        
     - name: Clone source code
