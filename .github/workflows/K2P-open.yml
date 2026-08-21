@@ -139,6 +139,15 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
+    - name:  update samrtdns
+      run:  rm -rf openwrt/feeds/luci/applications/luci-app-smartdns 
+            rm -rf openwrt/feeds/packages/net/smartdns 
+            cd && cd openwrt/feeds/packages/net/ 
+            git clone https://github.com/pymumu/openwrt-smartdns smartdns/ 
+            cd && cd openwrt/feeds/luci/applications/ 
+            git clone https://github.com/pymumu/luci-app-smartdns 
+
+
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
