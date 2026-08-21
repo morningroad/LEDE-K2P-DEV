@@ -140,12 +140,11 @@ jobs:
       run: cd openwrt && ./scripts/feeds install -a
 
     - name: update samrtdns
-      run:  cd openwrt
-            rm -rf feeds/luci/applications/luci-app-smartdns 
-            rm -rf feeds/packages/net/smartdns 
-            cd openwrt/feeds/packages/net/ 
+      run:  rm -rf /openwrt/feeds/luci/applications/luci-app-smartdns 
+            rm -rf /openwrt/feeds/packages/net/smartdns 
+            cd /openwrt/feeds/packages/net/ 
             git clone https://github.com/pymumu/openwrt-smartdns smartdns/ 
-            cd openwrt/feeds/luci/applications/ 
+            cd /openwrt/feeds/luci/applications/ 
             git clone https://github.com/pymumu/luci-app-smartdns 
 
 
