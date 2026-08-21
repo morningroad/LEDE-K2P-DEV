@@ -147,6 +147,9 @@ jobs:
             cd /openwrt/feeds/luci/applications/ 
             git clone https://github.com/pymumu/luci-app-smartdns 
 
+    - name: Install feeds again
+      run: cd openwrt && ./scripts/feeds install -a
+
 
     - name: Load custom configuration
       run: |
