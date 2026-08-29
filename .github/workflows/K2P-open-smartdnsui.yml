@@ -46,7 +46,7 @@ jobs:
     - name: Use Latest Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 'latest' # Automatically pulls the newest available Node.js version
+        node-version: '22' # Automatically pulls the newest available Node.js version
 
 
     - name: Check server configuration
