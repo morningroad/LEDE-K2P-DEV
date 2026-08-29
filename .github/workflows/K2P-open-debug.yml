@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: K2P-open-debug
+name: K2P-open-smartdnsui
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: K2P-open.config.bak
+  CONFIG_FILE: K2P-open.smartdns.config
   DIY_P1_SH: 
   DIY_P2_SH: 
   UPLOAD_BIN_DIR: true
