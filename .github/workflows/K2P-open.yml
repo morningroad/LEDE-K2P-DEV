@@ -139,7 +139,7 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: update samrtdns
+    - name: update smartdns
       run:  rm -rf /openwrt/feeds/luci/applications/luci-app-smartdns 
             rm -rf /openwrt/feeds/packages/net/smartdns 
             cd /openwrt/feeds/packages/net/ 
